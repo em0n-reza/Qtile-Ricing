@@ -1,0 +1,127 @@
+[colors.normal]
+black = "#1d2021"
+red = "#ad4731"
+green = "#79740e"
+yellow = "#c79744"
+blue = "#3a6d6e"
+magenta = "#8f4d6e"
+cyan = "#8c414b"
+white = "#807f7e"
+
+[colors.cursor]
+cursor="#8c414b"
+
+[colors.bright]
+black = "#5c5c5c"
+red = "#ad4731"
+green = "#94a02a"
+yellow = "#c79744"
+blue = "#6a8a82"
+magenta = "#ab7a96"
+cyan = "#739c6a"
+white = "#b5b5b5"
+
+[colors.primary]
+background = "#000000"
+foreground = "#b5b5b5"
+
+[cursor]
+style.shape = "Block"
+style.blinking = "Off"
+vi_mode_style.shape = "Block"
+vi_mode_style.blinking = "Off"
+ 
+[font]
+size = 11.5
+
+[font.bold]
+family = "SF Mono"
+style = "Medium"
+
+[font.bold_italic]
+family = "SF Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "SF Mono"
+style = "Medium"
+
+[font.normal]
+family = "SF Mono"
+style = "Semibold"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+
+[scrolling]
+history = 50000
+
+[window]
+opacity = 1
+padding = { x = 4, y = 2 }
+dynamic_padding = true
+
+
+#############################
+# Custom Keybindings
+#############################
+
+
+# scroll half page up
+[[keyboard.bindings]]
+key = "u"
+mods = "Super"
+action = "ScrollHalfPageUp"
+
+# scroll half page down
+[[keyboard.bindings]]
+key = "d"
+mods = "Super"
+action = "ScrollHalfPageDown"
+
+# scroll one line up
+#[[keyboard.bindings]]
+#key = "k"
+#mods = "Control"
+#action = "ScrollLineUp"
+
+# scroll one line down
+#[[keyboard.bindings]]
+#key = "j"
+#mods = "Control"
+#action = "ScrollLineDown"
+
+# scroll to top
+[[keyboard.bindings]]
+key = "g"
+mods = "Control"
+action = "ScrollToTop"
+
+# scroll to bottom
+[[keyboard.bindings]]
+key = "g"
+mods = "Control|Shift"
+action = "ScrollToBottom"
+
+# search forward
+[[keyboard.bindings]]
+key = "/"
+mods = "Super"
+action = "SearchForward"
+
+# search next
+[[keyboard.bindings]]
+key = "n"
+mods = "Super"
+action = "SearchFocusNext"
+
+# search previous
+[[keyboard.bindings]]
+key = "n"
+mods = "Super|Shift"
+action = "SearchFocusPrevious"
+
+
+[env]
+TERM = "xterm-256color"
